@@ -1,5 +1,5 @@
 .hero {
-  background-image: URL(Bouldercolorado.jpg);
+  background-image: URL(../Bouldercolorado.jpg);
   background-size: cover;
   height: calc( 100vh - 50px );
   width: 100vw;
