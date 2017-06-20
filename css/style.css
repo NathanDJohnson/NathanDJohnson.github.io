@@ -16,3 +16,7 @@
 .full-screen {
   min-height: calc( 100vh - 50px );
 }
+.full-screen .container h2 {
+  margin-top: 50px;
+  padding-top: 2em;
+}
