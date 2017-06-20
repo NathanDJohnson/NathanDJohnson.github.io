@@ -3,9 +3,9 @@
   background-image: URL(../Bouldercolorado.jpg);
   background-size: cover;
   height: calc( 100vh - 50px );
-  width: 100vw;
   margin-top: 50px;
   margin-left: -15px;
+  margin-right: -15px;
 }
 .hero header {
   position: absolute;
