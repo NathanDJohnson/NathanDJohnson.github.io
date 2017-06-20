@@ -13,3 +13,6 @@
   left: 35vw;
   color: #fff;
 }
+.full-screen {
+  min-height: calc( 100vh - 50px );
+}
