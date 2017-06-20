@@ -1,8 +1,15 @@
 .hero {
+  position: relative;
   background-image: URL(../Bouldercolorado.jpg);
   background-size: cover;
   height: calc( 100vh - 50px );
   width: 100vw;
   margin-top: 50px;
   margin-left: -15px;
+}
+.hero h1 {
+  position: absolute;
+  top: 35vh;
+  left: 35vw;
+  color: #fff;
 }
