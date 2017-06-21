@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-image: URL(../Bouldercolorado.jpg);
+  background-image: URL(../img/Bouldercolorado.jpg);
   background-size: cover;
   background-position: center center;
   height: calc( 100vh - 50px );
