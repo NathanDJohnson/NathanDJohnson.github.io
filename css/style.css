@@ -6,11 +6,12 @@
   margin-top: 50px;
   margin-left: -15px;
   margin-right: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
 }
 .hero header {
-  position: absolute;
-  top: 35vh;
-  left: 35vw;
   color: #fff;
 }
 .full-screen {
