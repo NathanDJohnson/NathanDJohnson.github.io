@@ -9,7 +9,7 @@ function getQuote() {
       $("#quote").html(
         "<p id=\"quoteQuote\">" +
           a[0].content.replace(/<\/?p[^>]*>/g, "") +
-          "</p><p id=\"quoteAuthor\">â€” " +
+          "</p><p id=\"quoteAuthor\">— " +
           a[0].title +
           "</p>"
       );
