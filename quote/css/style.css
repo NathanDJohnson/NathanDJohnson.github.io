@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(4,45,145);
+  background-color: rgba(4,45,145,0.5);
+  padding: 10%;
+}
+
+.fa {
+  color: #fff;
+}
+
+.wrap {
+    background-color: #fff;
+    padding: 2em;
+    width: 90%;
+    margin: 0 auto;
+}
+#newQuote:hover {
+  cursor: pointer;
+}
