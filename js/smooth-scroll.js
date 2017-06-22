@@ -1,13 +1,24 @@
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
+$(document).ready(function(){
+  $(document).on("scroll",function(){
+    var scrollPos = $(document).scrollTop();
+    $("nav li").each(function(){
+      var currLink = $(this);
+      currLink.removeClass("active");
+      var refElement = $(currLink.find("a").attr("href"));
+      var refPos = refElement.position().top - 60;
+      if( refPos <= scrollPos && refPos + refElement.height() > scrollPos - 60 ) {
+        $("nav li a").each(function(){ $(this).parent().removeClass("active"); });
+        currLink.addClass("active");
+      }
+    });
+  });
+
+  // Select all links with hashes
+  $('a[href*="#"]').click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -18,19 +29,10 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
+          // -50 to compensate for fixed header
+          scrollTop: target.offset().top - 50
+        }, 1000 );
       }
     }
   });
+});
