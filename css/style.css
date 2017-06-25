@@ -34,14 +34,14 @@
 .full-screen:nth-of-type(2n) {
   background-color: #dedede;
 }
-.img-responsive {
+.img-border {
   padding: 1.5em;
   border: 10px solid #fff;
   margin-bottom: 1.5em;
   -webkit-transition: border-color 0.5s;
   transition: border-color 0.5s;
 }
-.img-responsive:hover {
+.img-border:hover {
     border-color: #eee;
 }
 .footer.navbar {
