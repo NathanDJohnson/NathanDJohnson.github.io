@@ -36,6 +36,8 @@
 }
 .img-responsive {
   padding: 1.5em;
+  border: 10px solid #eee;
+  margin-bottom: 1.5em;
 }
 .footer.navbar {
   min-height: 0;
