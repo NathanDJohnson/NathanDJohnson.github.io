@@ -36,8 +36,13 @@
 }
 .img-responsive {
   padding: 1.5em;
-  border: 10px solid #eee;
+  border: 10px solid #fff;
   margin-bottom: 1.5em;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+}
+.img-responsive:hover {
+    border-color: #eee;
 }
 .footer.navbar {
   min-height: 0;
